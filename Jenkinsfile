@@ -23,7 +23,7 @@ pipeline {
         stage('Install Pip') {
             steps {
                 script {
-                    sh 'apt update -y && apt install pip -y'
+                    sh 'apt update -y && apt install pip default-jre -y'
                 }
             }
         }
